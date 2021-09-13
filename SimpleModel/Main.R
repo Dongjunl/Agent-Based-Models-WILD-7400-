@@ -26,15 +26,15 @@ points(pop[,1]/150, pop[,2]/150, pch = 19, cex=0.5)
 pathways = NULL
 
 for(i in 1:nrow(pop)){
-  indv = pop[i,,drop=FALSE]
+  indv <- pop[i,,drop=FALSE]
   
-  movepath = MoveIndv(indv, land, move, nstep, elevation, landscape )
+  movepath <- MoveIndv(indv, land, move, nstep, elevation, landscape )
   
   ## Step#6. Extract needed information
   lines(movepath[seq(1,length(movepath), 2)]/150, 
        movepath[seq(2,length(movepath), 2)]/150, lwd=2)
   
-  pathways = rbind(pathways, movepath)
+  pathways <- rbind(pathways, movepath)
   
 }
 
