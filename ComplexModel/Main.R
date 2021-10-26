@@ -25,6 +25,8 @@ for (i in 1:nrow(farmers)){
   print(c(BI,Edu_lv,p_value))
 }
 
+# Distributing P values of each farmer (making P maps) 
+
 
 ## Input data
 #1: Rainfall data > peak flow, amount of runoff
@@ -32,3 +34,4 @@ for (i in 1:nrow(farmers)){
 #3: Soil map > K map
 #3: Crop map > C map (monthly)
 
+# Generating soil erosion map based on MUSLE.
